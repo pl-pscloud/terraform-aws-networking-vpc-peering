@@ -6,6 +6,6 @@ resource "aws_vpc_peering_connection" "pscloud-vpc-peering" {
   auto_accept   = var.pscloud_auto_accept
   
   tags = {
-    Name = "${var.pscloud_company}_vpc_peering_${var.pscloud_env}_${each.value.vpc1}_${each.value.vpc1}"
+    Name = "${var.pscloud_company}_vpc_peering_${var.pscloud_env}_${each.value.vpc1}_${each.value.vpc2}"
   }
 }
